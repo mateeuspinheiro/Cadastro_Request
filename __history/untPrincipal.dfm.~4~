@@ -1,0 +1,58 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 478
+  ClientWidth = 913
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object memoResponse: TMemo
+    Left = 8
+    Top = 8
+    Width = 897
+    Height = 233
+    Lines.Strings = (
+      'memoResponse')
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object btnConsultaCNPJ: TButton
+    Left = 806
+    Top = 247
+    Width = 99
+    Height = 25
+    Caption = 'Consultar CNPJ'
+    TabOrder = 1
+  end
+  object edtCNPJ: TEdit
+    Left = 624
+    Top = 249
+    Width = 176
+    Height = 21
+    TabOrder = 2
+  end
+  object RESTClient1: TRESTClient
+    Params = <>
+    Left = 80
+    Top = 400
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 160
+    Top = 400
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 248
+    Top = 400
+  end
+end
