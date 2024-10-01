@@ -1,0 +1,15 @@
+program Cadastro_Request;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmAPI},
+  untConsultaWS in 'untConsultaWS.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmAPI, frmAPI);
+  Application.Run;
+end.

@@ -2,8 +2,11 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2024/09/29 01:13:29.000.719,=C:\Users\Mateus Pinheiro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/09/29 01:14:38.000.805,C:\Users\Mateus Pinheiro\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Projetos_delphi\CadastroCliente_Request\untPrincipal.pas</Transaction>
-    <Transaction>2024/09/29 01:14:38.000.805,C:\Users\Mateus Pinheiro\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Projetos_delphi\CadastroCliente_Request\untPrincipal.dfm</Transaction>
-    <Transaction>2024/09/29 01:14:52.000.059,C:\Users\Mateus Pinheiro\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Projetos_delphi\CadastroCliente_Request\Cadastro_Request.dproj</Transaction>
+    <Transaction>2024/09/29 01:14:38.000.805,D:\Projetos_delphi\CadastroCliente_Request\untPrincipal.dfm=C:\Users\Mateus Pinheiro\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/09/29 01:14:38.000.805,D:\Projetos_delphi\CadastroCliente_Request\untPrincipal.pas=C:\Users\Mateus Pinheiro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/29 01:14:52.000.059,D:\Projetos_delphi\CadastroCliente_Request\Cadastro_Request.dproj=C:\Users\Mateus Pinheiro\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/09/30 23:23:05.260,=D:\Projetos_delphi\CadastroCliente_Request\Unit1.pas</Transaction>
+    <Transaction>2024/09/30 23:23:16.709,D:\Projetos_delphi\CadastroCliente_Request\untConsultaWs.pas=D:\Projetos_delphi\CadastroCliente_Request\Unit1.pas</Transaction>
+    <Transaction>2024/09/30 23:23:28.901,D:\Projetos_delphi\CadastroCliente_Request\untConsultaWSImpl.pas=D:\Projetos_delphi\CadastroCliente_Request\untConsultaWs.pas</Transaction>
   </Transactions>
 </BorlandProject>

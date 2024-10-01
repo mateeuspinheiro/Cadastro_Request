@@ -1,0 +1,37 @@
+unit untConsultaWS;
+
+interface
+
+uses
+  System.Classes, System.SysUtils, REST.Types, REST.Client;
+
+procedure ConsultaCNPJ(const vCNPJ: string; var vResponse: string);
+
+implementation
+
+procedure ConsultaCNPJ(const vCNPJ: string; var vResponse: string);
+var
+  RESTClient1: TRESTClient;
+  RESTRequest1: TRESTRequest;
+  RESTResponse1: TRESTResponse;
+begin
+  RESTClient1 := TRESTClient.Create(nil);
+  RESTRequest1 := TRESTRequest.Create(nil);
+  RESTResponse1 := TRESTResponse.Create(nil);
+  try
+    RESTClient1.BaseURL := Format('https://receitaws.com.br/v1/cnpj/%s',
+      [vCNPJ]);
+    RESTRequest1.Client := RESTClient1;
+    RESTRequest1.Response := RESTResponse1;
+    RESTRequest1.Method := rmGET;
+    RESTRequest1.Execute;
+    vResponse := RESTResponse1.Content;
+  finally
+    RESTClient1.Free;
+    RESTRequest1.Free;
+    RESTResponse1.Free;
+  end;
+
+end;
+
+end.

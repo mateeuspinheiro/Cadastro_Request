@@ -1,0 +1,14 @@
+program Cadastro_Request;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmAPI};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmAPI, frmAPI);
+  Application.Run;
+end.

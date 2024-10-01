@@ -1,0 +1,48 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, REST.Types, REST.Client,
+  Data.Bind.Components, Data.Bind.ObjectScope, Vcl.StdCtrls,untConsultaWS;
+
+type
+  TfrmAPI = class(TForm)
+    memoResponse: TMemo;
+    btnConsultaCNPJ: TButton;
+    edtCNPJ: TEdit;
+    procedure btnConsultaCNPJClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmAPI: TfrmAPI;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TfrmAPI.btnConsultaCNPJClick(Sender: TObject);
+var
+  vCNPJ, vResponse: String;
+begin
+  if edtCNPJ.Text = '' then
+  begin
+    ShowMessage('Não foi informado nenhum valor no campo CNPJ!');
+    Exit;
+  end;
+
+  vCNPJ := edtCNPJ.Text;
+  ConsultaCNPJ(vCNPJ, vResponse);
+  memoResponse.Lines.Clear;
+  memoResponse.Lines.Add(vResponse);
+end;
+
+
+end.

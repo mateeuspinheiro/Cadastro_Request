@@ -2,7 +2,8 @@ program Cadastro_Request;
 
 uses
   Vcl.Forms,
-  untPrincipal in 'untPrincipal.pas' {Form1};
+  untPrincipal in 'untPrincipal.pas' {Form1},
+  untConsultaWSImpl in 'untConsultaWSImpl.pas';
 
 {$R *.res}
 
